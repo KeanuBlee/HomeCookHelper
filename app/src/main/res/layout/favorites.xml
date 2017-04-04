@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/InternetRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="91dp"
+                        android:checked="true"
+                        android:text="Internet" />
+
+                    <RadioButton
+                        android:id="@+id/favoritesRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/InternetRadio"
+                        android:layout_centerHorizontal="true"
+                        android:text="Favorites" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/favoritesRadio"
+                        android:layout_alignLeft="@+id/InternetRadio"
+                        android:layout_alignStart="@+id/InternetRadio"
+                        android:text="Search Type:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/ingredients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/InternetRadio"
+                        android:layout_alignStart="@+id/InternetRadio"
+                        android:layout_below="@+id/InternetRadio"
+                        android:layout_marginTop="61dp"
+                        android:ems="10"
+                        android:hint="Ingredients"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp"
+                        android:text="Search Criteria:"
+                        android:textSize="18sp"
+                        android:layout_below="@+id/InternetRadio"
+                        android:layout_alignLeft="@+id/ingredients"
+                        android:layout_alignStart="@+id/ingredients" />
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/favoritesRadio"
+                        android:layout_alignStart="@+id/favoritesRadio"
+                        android:layout_below="@+id/ingredients"
+                        android:layout_marginTop="77dp"
+                        android:text="Search" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/favorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+                    </ScrollView>
+                </RelativeLayout>
+
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+</LinearLayout>
