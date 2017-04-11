@@ -3,156 +3,174 @@
 
     <item
         is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Param\.android\build-cache\c8ec1312889ef7602a2d1933e4c03128d85775f8\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.3"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_6585fabf5935ad466643ef8adb8c9b05fa5278db\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_1bbb98b13e27a7b3702c6de6aa8f5ee1330e3388\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8ab42c35ede30c66e340c9c633bf62cefa53ca47\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_9742050db8e0af23754677557fe5d99508ad0c25\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_8fc87a1ce638a995ab5c68ae3c1c683804d25ade\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="454f5e8d5fb4c3805d77261b893bd9218b711fc4">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_545b24b1b7e103ae06638bdd2d0b5f89b3ca81ad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7a25fd7d07b4ef298a946f1839f612f3bd349150\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_b233af32d87a0f07a393d7cfad8ec739d7c349bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_f593cacb5008a695bfd14267f2c65fccf8be7df5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e99777771fe807de0525a632f81bb28a5b5db5b5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_c44102fc2b88ccacfe81cecf405c163636d357fb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="75dbecd33c8e5b33cba699ab2a6c6d0b2cc058e8">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_67518305f42baca0337a098e428cf5f0997cecc4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_b9d2c03b302ca6fdc127ef60308aa38782b91455\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Keanu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_bf606048965afd98f40152f3faafe3300c367617\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_cd3472a8b518ae38c00d8cbe889e0581364b2fd3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
+        revision="25.0.0"
         sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_bf46b074f00f70f9453788e705456c9346502b23\classes.dex" />
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_baec42345ed435674a64df5781c3534125f4e7df\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="G:\Documents\FoodAggregate\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jar="C:\Users\Param\.android\build-cache\f5c153904852bb1ef636d05354b5317e08440e3b\output\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.3"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8f5f1bd290db7af14c3e5095eab9c8cfd9b519f6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\1bc2f9a45454ffdff02780f815519d745d809e81\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7be28eece7191858967f38a45e5fbeaa9c96b729\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_3df8f2c2828707388911b49d5175bda5211cd88a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\ad167c925e1262f89489916a31ae2f3c2ad96b6a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_23fadb09382bc4ede2396688aeafc2f216f51c74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\9f8dd69054009baf22703a5b922af0febd2eefd0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_541651bf1936306d85767e3711b9eda226e4e2cc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\9a80466ff20f32af60fe0aa3bb7e70c6c83e851c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1aa78d1358e0659612ab64384d953d028e720fc2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\625c0dfb42f45404fef656a44ff65c1ba6c6329c\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_781dd2e5c6586e571862cdac769d249f37f1bd20\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_939bca2f59869a00ba717b1e718556fb9c4a5f8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6583018251421668c61d99ff86b7dac5abb236bf">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_017ee8290605590f51ac3121e853d40e9a680a82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\3638a99f18751358c6893d1eb5e35016095ba0e7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="G:\Documents\FoodAggregate\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_c3526cf5a2e78e825bfed1510c5e88e9e748c832\classes.dex" />
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e626c7041fc2dda7e1421cdce2388df9526f23a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\93a72dbcf3022204692a73c179b6ee30ceaa02c5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_74ed23798c117a438696572f8823f29c3fb1fbe5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\f5c153904852bb1ef636d05354b5317e08440e3b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e76b2ccb1c0807e7ebc0e571091c5d11b2cfd35b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\668d8b8fe1b687d3556cb8cd3d8d1b508142790c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f44a9620e2d7234dc53d8d97ede8d5ccbfac4af1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\9f8dd69054009baf22703a5b922af0febd2eefd0\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_34b372f34172fb6c6f617df15ee1b61410747c2e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\00199e14531fe8d8152fe7cc5a1c15f9dfd535f5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_56f08b60de00d261921cd3903b01c4987405f0ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\625c0dfb42f45404fef656a44ff65c1ba6c6329c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a46f673953713011b45172658683e5d32d9697a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\00199e14531fe8d8152fe7cc5a1c15f9dfd535f5\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_4e45518a39545bb29d9626b663eae6decf75be82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Param\.android\build-cache\3638a99f18751358c6893d1eb5e35016095ba0e7\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8748575be7c1120b98bfd8c766e892751ed7944d\classes.dex" />
     </item>
 
 </items>
