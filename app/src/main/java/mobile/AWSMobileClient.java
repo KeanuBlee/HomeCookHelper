@@ -1,4 +1,4 @@
-package com.amazonaws.mobile;
+package mobile;
 //
 // Copyright 2017 Amazon.com, Inc. or its affiliates (Amazon). All Rights Reserved.
 //
@@ -13,8 +13,8 @@ import android.util.Log;
 
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.mobilehelper.auth.IdentityManager;
-import com.amazonaws.regions.Regions;
 import com.amazonaws.mobilehelper.auth.signin.CognitoUserPoolsSignInProvider;
+import com.amazonaws.regions.Regions;
 
 /**
  * The AWS Mobile Client bootstraps the application to make calls to AWS 

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4\\button_login.png",
+        "source": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxxhdpi-v4\\button_login.png"
+    },
+    {
+        "merged": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxxhdpi-v4\\button_login_pressed.png",
+        "source": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxxhdpi-v4\\button_login_pressed.png"
+    }
+]

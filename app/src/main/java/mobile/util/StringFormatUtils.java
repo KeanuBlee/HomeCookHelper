@@ -1,4 +1,4 @@
-package com.amazonaws.mobile.util;
+package mobile.util;
 
 public final class StringFormatUtils {
 

@@ -6,7 +6,7 @@
 //
 // Source code generated from template: aws-my-sample-app-android v0.16
 //
-package com.mysampleapp;
+package edu.gatech.foodaggregate;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,14 +14,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.Toast;
-import com.amazonaws.mobile.AWSMobileClient;
+
 import com.amazonaws.mobilehelper.auth.IdentityManager;
 import com.amazonaws.mobilehelper.auth.IdentityProvider;
 import com.amazonaws.mobilehelper.auth.StartupAuthErrorDetails;
 import com.amazonaws.mobilehelper.auth.StartupAuthResult;
 import com.amazonaws.mobilehelper.auth.StartupAuthResultHandler;
 import com.amazonaws.mobilehelper.auth.signin.AuthException;
-import com.amazonaws.mobilehelper.auth.signin.ProviderAuthException;
+
+import mobile.AWSMobileClient;
 
 /**
  * Splash Activity is the start-up activity that appears until a delay is expired

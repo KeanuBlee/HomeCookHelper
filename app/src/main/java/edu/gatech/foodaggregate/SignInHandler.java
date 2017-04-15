@@ -1,4 +1,4 @@
-package com.mysampleapp;
+package edu.gatech.foodaggregate;
 //
 // Copyright 2017 Amazon.com, Inc. or its affiliates (Amazon). All Rights Reserved.
 //
@@ -13,8 +13,8 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.amazonaws.mobilehelper.auth.IdentityProvider;
 import com.amazonaws.mobilehelper.auth.DefaultSignInResultHandler;
+import com.amazonaws.mobilehelper.auth.IdentityProvider;
 
 /**
  * Handles Re-directing to the main activity upon sign-in.

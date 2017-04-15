@@ -6,7 +6,7 @@
 //
 // Source code generated from template: aws-my-sample-app-android v0.16
 //
-package com.amazonaws.mobile;
+package mobile;
 
 import com.amazonaws.mobilehelper.config.AWSMobileHelperConfiguration;
 import com.amazonaws.regions.Regions;

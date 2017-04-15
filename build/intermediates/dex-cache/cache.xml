@@ -3,75 +3,39 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\c8ec1312889ef7602a2d1933e4c03128d85775f8\output\jars\classes.jar"
+        jar="C:\Users\Param\.gradle\caches\modules-2\files-2.1\com.amazonaws\aws-android-sdk-core\2.3.9\2fa9ee0e95329912656c8ccd98991b195a3ea539\aws-android-sdk-core-2.3.9.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_baec42345ed435674a64df5781c3534125f4e7df\classes.dex" />
+        sha1="2fa9ee0e95329912656c8ccd98991b195a3ea539">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\aws-android-sdk-core-2.3.9_e3852146272d0a84de4d8c4424e7130f3bebd4f6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\f5c153904852bb1ef636d05354b5317e08440e3b\output\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Param\.gradle\caches\modules-2\files-2.1\com.amazonaws\aws-android-sdk-cognito\2.3.9\d7e881325e8217fd65651fc7153a3db06f2e454c\aws-android-sdk-cognito-2.3.9.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8f5f1bd290db7af14c3e5095eab9c8cfd9b519f6\classes.dex" />
+        sha1="d7e881325e8217fd65651fc7153a3db06f2e454c">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\aws-android-sdk-cognito-2.3.9_5154dd266cdc6be249a047f642dd383a7629f9e7\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\1bc2f9a45454ffdff02780f815519d745d809e81\output\jars\classes.jar"
+        jar="C:\Users\Param\.android\build-cache\d4cf5131a08b2215c65785717141e83d278bf418\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7be28eece7191858967f38a45e5fbeaa9c96b729\classes.dex" />
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4699f5e1725067723096bcba6f3b98fa31e75268\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Param\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jar="C:\Users\Param\.gradle\caches\modules-2\files-2.1\com.amazonaws\aws-android-sdk-cognitoidentityprovider\2.3.9\39a3018aee421bd16bc086a92b9bede977da5c93\aws-android-sdk-cognitoidentityprovider-2.3.9.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_3df8f2c2828707388911b49d5175bda5211cd88a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\ad167c925e1262f89489916a31ae2f3c2ad96b6a\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_23fadb09382bc4ede2396688aeafc2f216f51c74\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\9f8dd69054009baf22703a5b922af0febd2eefd0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_541651bf1936306d85767e3711b9eda226e4e2cc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\9a80466ff20f32af60fe0aa3bb7e70c6c83e851c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1aa78d1358e0659612ab64384d953d028e720fc2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\625c0dfb42f45404fef656a44ff65c1ba6c6329c\output\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_781dd2e5c6586e571862cdac769d249f37f1bd20\classes.dex" />
+        sha1="39a3018aee421bd16bc086a92b9bede977da5c93">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\aws-android-sdk-cognitoidentityprovider-2.3.9_b3eb2a628214c4e6149fbd40030d680150820fb1\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -88,89 +52,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="6583018251421668c61d99ff86b7dac5abb236bf">
+        sha1="50963cfbc71143810307c697c61ae840363decad">
         <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_017ee8290605590f51ac3121e853d40e9a680a82\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\3638a99f18751358c6893d1eb5e35016095ba0e7\output\jars\classes.jar"
+        jar="C:\Program Files\Android\Android Studio1\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e626c7041fc2dda7e1421cdce2388df9526f23a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\93a72dbcf3022204692a73c179b6ee30ceaa02c5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_74ed23798c117a438696572f8823f29c3fb1fbe5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\f5c153904852bb1ef636d05354b5317e08440e3b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e76b2ccb1c0807e7ebc0e571091c5d11b2cfd35b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\668d8b8fe1b687d3556cb8cd3d8d1b508142790c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f44a9620e2d7234dc53d8d97ede8d5ccbfac4af1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\9f8dd69054009baf22703a5b922af0febd2eefd0\output\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_34b372f34172fb6c6f617df15ee1b61410747c2e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\00199e14531fe8d8152fe7cc5a1c15f9dfd535f5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_56f08b60de00d261921cd3903b01c4987405f0ff\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\625c0dfb42f45404fef656a44ff65c1ba6c6329c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a46f673953713011b45172658683e5d32d9697a5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\00199e14531fe8d8152fe7cc5a1c15f9dfd535f5\output\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_4e45518a39545bb29d9626b663eae6decf75be82\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\3638a99f18751358c6893d1eb5e35016095ba0e7\output\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8748575be7c1120b98bfd8c766e892751ed7944d\classes.dex" />
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_ea3566817aae63c8e87ab16e4d1ccfdc8d788289\classes.dex" />
     </item>
 
 </items>
