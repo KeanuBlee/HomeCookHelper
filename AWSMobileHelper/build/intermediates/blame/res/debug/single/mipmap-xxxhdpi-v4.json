@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\button_login.png",
-        "source": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\src\\main\\res\\mipmap-xxxhdpi\\button_login.png"
+        "merged": "C:\\Users\\Keanu\\Documents\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\button_login_pressed.png",
+        "source": "C:\\Users\\Keanu\\Documents\\HomeCookHelper\\AWSMobileHelper\\src\\main\\res\\mipmap-xxxhdpi\\button_login_pressed.png"
     },
     {
-        "merged": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\button_login_pressed.png",
-        "source": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\src\\main\\res\\mipmap-xxxhdpi\\button_login_pressed.png"
+        "merged": "C:\\Users\\Keanu\\Documents\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\button_login.png",
+        "source": "C:\\Users\\Keanu\\Documents\\HomeCookHelper\\AWSMobileHelper\\src\\main\\res\\mipmap-xxxhdpi\\button_login.png"
     }
 ]
