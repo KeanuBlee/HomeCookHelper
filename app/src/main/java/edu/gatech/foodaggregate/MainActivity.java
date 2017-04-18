@@ -1,5 +1,6 @@
 package edu.gatech.foodaggregate;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (position) {
 
                     case 0:
-                        Toast.makeText(MainActivity.this, "To Be implemented", Toast.LENGTH_SHORT).show();
+
                         break;
                     case 1:
                         /*
@@ -109,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
                         i.putParcelableArrayListExtra("PlantList", (ArrayList<? extends Parcelable>) sortedList);
                         startActivityForResult(i, 1);
                         */
+                        startActivity(new Intent(MainActivity.this, FavoritesListActivity.class));
                         Toast.makeText(MainActivity.this, "To Be implemented", Toast.LENGTH_SHORT).show();
                         break;
                     case 2: //Fourth item
