@@ -11,17 +11,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c93a420c-9c3a-4025-b685-a51c700a6087" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/AvailableS3ContentIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/CloudFrontTransferHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/ContentDownloadPolicy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/ContentItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/ContentListHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/ContentManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/ContentProgressListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/ContentRemovedListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/ContentState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/FileContent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/LocalContentCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/S3ContentMeta.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/S3ContentSummary.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/S3TransferHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/S3WholeBucketIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/TransferHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/content/UserFileManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadObserver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadUtility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/ResponseHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/policy/DownloadPolicyProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/query/BasicDownloadInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/query/DownloadQueueProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/query/DownloadState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/query/QueryHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/request/DownloadAddRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/request/DownloadRemoveRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/BasicDownloader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/CompletionStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadError.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadFlags.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadSpeedMeasurer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadStatusUpdater.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/Downloader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/MinPriorityThreadFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/NetworkStateListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/QueueReaderTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/mobile/util/S3Utils.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-13-16-20-59-173.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-13-16-23-25-700.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-13-16-23-31-095.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-13-16-24-17-348.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-13-16-26-45-579.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-14-15-35-29-319.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-14-15-36-20-251.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-07-33-54-073.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-07-34-12-407.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-12-47-19-476.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-13-00-59-294.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-13-39-15-516.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-13-42-04-409.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-14-00-22-514.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-14-01-31-517.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-14-09-28-628.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-14-30-49-945.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-14-30-55-558.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-14-39-25-809.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-14-39-44-140.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-16-07-18-594.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-16-09-01-149.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-16-09-40-248.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-16-10-08-765.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-16-32-36-321.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-16-44-58-345.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-15-16-45-05-283.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_AWSMobileHelper_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_AWSMobileHelper_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_AWSMobileHelper_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_AWSMobileHelper_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/outputs/aar/AWSMobileHelper-debug.aar" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/outputs/aar/AWSMobileHelper-debug.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/outputs/aar/AWSMobileHelper-release.aar" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/outputs/aar/AWSMobileHelper-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/AWSMobileHelper.iml" afterPath="$PROJECT_DIR$/AWSMobileHelper/AWSMobileHelper.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/generated/source/buildConfig/androidTest/debug/com/amazonaws/mobilehelper/test/BuildConfig.java" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/generated/source/buildConfig/androidTest/debug/com/amazonaws/mobilehelper/test/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/androidTest/debug/multi/values-af.json" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/androidTest/debug/multi/values-af.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/androidTest/debug/multi/values-am.json" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/androidTest/debug/multi/values-am.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/androidTest/debug/multi/values-ar.json" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/androidTest/debug/multi/values-ar.json" />
@@ -260,11 +335,359 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/debug/single/drawable.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/debug/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/debug/single/mipmap-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/blame/res/debug/single/mipmap-xxxhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/drawable/selector_button_login.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/drawable/selector_button_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_forgot_password.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_forgot_password.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_mfa.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_mfa.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_sign_in.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_sign_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_sign_up.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_sign_up.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_sign_up_confirm.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/layout/activity_sign_up_confirm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/debug/res/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/drawable/selector_button_login.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/drawable/selector_button_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_forgot_password.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_forgot_password.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_mfa.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_mfa.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_sign_in.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_sign_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_sign_up.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_sign_up.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_sign_up_confirm.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/layout/activity_sign_up_confirm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/values/values.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/bundles/default/res/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-af/values-af.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-af/values-af.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-am/values-am.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-am/values-am.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ar/values-ar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-az-rAZ/values-az-rAZ.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-az-rAZ/values-az-rAZ.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-be-rBY/values-be-rBY.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-be-rBY/values-be-rBY.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-bg/values-bg.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-bg/values-bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-bn-rBD/values-bn-rBD.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-bn-rBD/values-bn-rBD.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-bs-rBA/values-bs-rBA.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-bs-rBA/values-bs-rBA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ca/values-ca.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ca/values-ca.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-cs/values-cs.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-cs/values-cs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-da/values-da.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-da/values-da.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-de/values-de.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-de/values-de.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-el/values-el.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-el/values-el.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-en-rAU/values-en-rAU.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-en-rAU/values-en-rAU.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-en-rGB/values-en-rGB.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-en-rGB/values-en-rGB.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-en-rIN/values-en-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-en-rIN/values-en-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-es-rUS/values-es-rUS.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-es-rUS/values-es-rUS.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-es/values-es.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-es/values-es.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-et-rEE/values-et-rEE.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-et-rEE/values-et-rEE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-eu-rES/values-eu-rES.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-eu-rES/values-eu-rES.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fa/values-fa.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fa/values-fa.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fi/values-fi.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fi/values-fi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fr/values-fr.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fr/values-fr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-gl-rES/values-gl-rES.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-gl-rES/values-gl-rES.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-gu-rIN/values-gu-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-gu-rIN/values-gu-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hi/values-hi.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hi/values-hi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hr/values-hr.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hr/values-hr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hu/values-hu.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hu/values-hu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hy-rAM/values-hy-rAM.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hy-rAM/values-hy-rAM.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-in/values-in.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-in/values-in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-is-rIS/values-is-rIS.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-is-rIS/values-is-rIS.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-it/values-it.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-it/values-it.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-iw/values-iw.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-iw/values-iw.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ja/values-ja.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ja/values-ja.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ka-rGE/values-ka-rGE.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ka-rGE/values-ka-rGE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-km-rKH/values-km-rKH.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-km-rKH/values-km-rKH.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-kn-rIN/values-kn-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-kn-rIN/values-kn-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ko/values-ko.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ko/values-ko.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ky-rKG/values-ky-rKG.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ky-rKG/values-ky-rKG.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-land/values-land.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-land/values-land.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-large-v4/values-large-v4.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-large-v4/values-large-v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-lo-rLA/values-lo-rLA.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-lo-rLA/values-lo-rLA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-lt/values-lt.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-lt/values-lt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-lv/values-lv.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-lv/values-lv.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mk-rMK/values-mk-rMK.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mk-rMK/values-mk-rMK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ml-rIN/values-ml-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ml-rIN/values-ml-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mn-rMN/values-mn-rMN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mn-rMN/values-mn-rMN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mr-rIN/values-mr-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mr-rIN/values-mr-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ms-rMY/values-ms-rMY.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ms-rMY/values-ms-rMY.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-my-rMM/values-my-rMM.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-my-rMM/values-my-rMM.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-nb/values-nb.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-nb/values-nb.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ne-rNP/values-ne-rNP.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ne-rNP/values-ne-rNP.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-night-v8/values-night-v8.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-night-v8/values-night-v8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-nl/values-nl.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-nl/values-nl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pa-rIN/values-pa-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pa-rIN/values-pa-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pl/values-pl.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pl/values-pl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-port/values-port.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-port/values-port.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pt/values-pt.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pt/values-pt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ro/values-ro.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ro/values-ro.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ru/values-ru.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ru/values-ru.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-si-rLK/values-si-rLK.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-si-rLK/values-si-rLK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sk/values-sk.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sk/values-sk.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sl/values-sl.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sl/values-sl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sq-rAL/values-sq-rAL.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sq-rAL/values-sq-rAL.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sr/values-sr.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sr/values-sr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sv/values-sv.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sv/values-sv.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw/values-sw.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw/values-sw.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ta-rIN/values-ta-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ta-rIN/values-ta-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-te-rIN/values-te-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-te-rIN/values-te-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-th/values-th.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-th/values-th.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-tl/values-tl.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-tl/values-tl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-tr/values-tr.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-tr/values-tr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-uk/values-uk.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-uk/values-uk.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ur-rPK/values-ur-rPK.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ur-rPK/values-ur-rPK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v12/values-v12.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v12/values-v12.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v13/values-v13.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v13/values-v13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v14/values-v14.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v17/values-v17.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v17/values-v17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v18/values-v18.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v18/values-v18.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v21/values-v21.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v22/values-v22.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v22/values-v22.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v23/values-v23.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v23/values-v23.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-vi/values-vi.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-vi/values-vi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zu/values-zu.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-zu/values-zu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/mergeReleaseShaders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageReleaseResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageReleaseResources/merged.dir/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/incremental/packageReleaseResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/manifests/aapt/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/manifests/aapt/release/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_fade_in.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_fade_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_fade_out.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_fade_out.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_grow_fade_in_from_bottom.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_grow_fade_in_from_bottom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_popup_enter.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_popup_enter.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_popup_exit.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_popup_exit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_shrink_fade_out_from_bottom.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_shrink_fade_out_from_bottom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_bottom.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_bottom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_top.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_top.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_bottom.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_bottom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_top.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_top.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_light.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_btn_colored_borderless_text_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_btn_colored_borderless_text_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_color_highlight_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_color_highlight_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_btn_checkable.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_btn_checkable.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_default.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_edittext.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_edittext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_seek_thumb.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_seek_thumb.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_spinner.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_spinner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_switch_thumb.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_switch_thumb.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_switch_track.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color-v23/abc_tint_switch_track.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_btn_colored_borderless_text_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_btn_colored_borderless_text_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_dark.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_dark.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_light.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_dark.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_btn_checkable.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_btn_checkable.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_default.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_edittext.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_edittext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_seek_thumb.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_seek_thumb.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_spinner.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_spinner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_thumb.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_thumb.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_track.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/abc_tint_switch_track.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_dark.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_light.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_action_bar_item_background_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_action_bar_item_background_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_btn_colored_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_btn_colored_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_edit_text_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_edit_text_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable-v23/abc_control_background_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable-v23/abc_control_background_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_borderless_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_borderless_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_check_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_check_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_colored_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_colored_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_default_mtrl_shape.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_default_mtrl_shape.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_radio_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_btn_radio_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_cab_background_internal_bg.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_cab_background_internal_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_cab_background_top_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_cab_background_top_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_dialog_material_background.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_dialog_material_background.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_edit_text_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_edit_text_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_ab_back_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_ab_back_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_clear_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_clear_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_go_search_api_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_go_search_api_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_menu_overflow_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_menu_overflow_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_search_api_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_search_api_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_voice_search_api_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ic_voice_search_api_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_item_background_holo_dark.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_item_background_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_item_background_holo_light.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_item_background_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_background_transition_holo_dark.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_background_transition_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_background_transition_holo_light.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_background_transition_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_holo_dark.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_holo_dark.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_holo_light.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_list_selector_holo_light.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_indicator_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_indicator_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_small_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_ratingbar_small_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_thumb_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_thumb_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_tick_mark_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_tick_mark_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_track_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_seekbar_track_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_spinner_textfield_background_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_spinner_textfield_background_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_switch_thumb_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_switch_thumb_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_tab_indicator_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_tab_indicator_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_text_cursor_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_text_cursor_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_textfield_search_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_textfield_search_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_vector_test.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/abc_vector_test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/selector_button_login.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/drawable/selector_button_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_bar_title_item.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_bar_title_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_bar_up_container.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_bar_up_container.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_bar_view_list_nav_layout.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_bar_view_list_nav_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_menu_item_layout.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_menu_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_menu_layout.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_menu_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_mode_bar.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_mode_bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_mode_close_item_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_action_mode_close_item_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_activity_chooser_view.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_activity_chooser_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_activity_chooser_view_list_item.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_activity_chooser_view_list_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_alert_dialog_button_bar_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_alert_dialog_button_bar_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_alert_dialog_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_alert_dialog_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_dialog_title_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_dialog_title_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_expanded_menu_layout.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_expanded_menu_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_list_menu_item_checkbox.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_list_menu_item_checkbox.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_list_menu_item_icon.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_list_menu_item_icon.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_list_menu_item_layout.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_list_menu_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_list_menu_item_radio.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_list_menu_item_radio.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_popup_menu_header_item_layout.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_popup_menu_header_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_popup_menu_item_layout.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_popup_menu_item_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_content_include.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_content_include.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_simple.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_simple.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_simple_overlay_action_mode.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_simple_overlay_action_mode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_toolbar.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_screen_toolbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_search_dropdown_item_icons_2line.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_search_dropdown_item_icons_2line.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_search_view.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_search_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_select_dialog_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/abc_select_dialog_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_forgot_password.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_forgot_password.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_mfa.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_mfa.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_sign_in.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_sign_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_sign_up.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_sign_up.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_sign_up_confirm.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/activity_sign_up_confirm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_media_action.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_media_action.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_media_cancel_action.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_media_cancel_action.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_big_media.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_big_media.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_big_media_narrow.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_big_media_narrow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_lines.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_lines.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_media.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_media.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_part_chronometer.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_part_chronometer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_part_time.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/notification_template_part_time.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/select_dialog_item_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/select_dialog_item_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/select_dialog_multichoice_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/select_dialog_multichoice_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/select_dialog_singlechoice_material.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/select_dialog_singlechoice_material.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/support_simple_spinner_dropdown_item.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/layout/support_simple_spinner_dropdown_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-af/values-af.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-af/values-af.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-am/values-am.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-am/values-am.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ar/values-ar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-az-rAZ/values-az-rAZ.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-az-rAZ/values-az-rAZ.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-b+sr+Latn/values-b+sr+Latn.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-b+sr+Latn/values-b+sr+Latn.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-be-rBY/values-be-rBY.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-be-rBY/values-be-rBY.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-bg/values-bg.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-bg/values-bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-bn-rBD/values-bn-rBD.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-bn-rBD/values-bn-rBD.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-bs-rBA/values-bs-rBA.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-bs-rBA/values-bs-rBA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ca/values-ca.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ca/values-ca.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-cs/values-cs.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-cs/values-cs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-da/values-da.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-da/values-da.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-de/values-de.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-de/values-de.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-el/values-el.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-el/values-el.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-en-rAU/values-en-rAU.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-en-rAU/values-en-rAU.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-en-rGB/values-en-rGB.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-en-rGB/values-en-rGB.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-en-rIN/values-en-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-en-rIN/values-en-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-es-rUS/values-es-rUS.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-es-rUS/values-es-rUS.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-es/values-es.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-es/values-es.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-et-rEE/values-et-rEE.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-et-rEE/values-et-rEE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-eu-rES/values-eu-rES.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-eu-rES/values-eu-rES.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-fa/values-fa.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-fa/values-fa.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-fi/values-fi.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-fi/values-fi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-fr-rCA/values-fr-rCA.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-fr-rCA/values-fr-rCA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-fr/values-fr.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-fr/values-fr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-gl-rES/values-gl-rES.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-gl-rES/values-gl-rES.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-gu-rIN/values-gu-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-gu-rIN/values-gu-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-h720dp-v13/values-h720dp-v13.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-h720dp-v13/values-h720dp-v13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hdpi-v4/values-hdpi-v4.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hdpi-v4/values-hdpi-v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hi/values-hi.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hi/values-hi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hr/values-hr.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hr/values-hr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hu/values-hu.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hu/values-hu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hy-rAM/values-hy-rAM.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-hy-rAM/values-hy-rAM.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-in/values-in.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-in/values-in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-is-rIS/values-is-rIS.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-is-rIS/values-is-rIS.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-it/values-it.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-it/values-it.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-iw/values-iw.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-iw/values-iw.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ja/values-ja.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ja/values-ja.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ka-rGE/values-ka-rGE.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ka-rGE/values-ka-rGE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-kk-rKZ/values-kk-rKZ.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-kk-rKZ/values-kk-rKZ.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-km-rKH/values-km-rKH.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-km-rKH/values-km-rKH.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-kn-rIN/values-kn-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-kn-rIN/values-kn-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ko/values-ko.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ko/values-ko.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ky-rKG/values-ky-rKG.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ky-rKG/values-ky-rKG.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-land/values-land.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-land/values-land.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-large-v4/values-large-v4.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-large-v4/values-large-v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ldltr-v21/values-ldltr-v21.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ldltr-v21/values-ldltr-v21.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-lo-rLA/values-lo-rLA.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-lo-rLA/values-lo-rLA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-lt/values-lt.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-lt/values-lt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-lv/values-lv.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-lv/values-lv.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-mk-rMK/values-mk-rMK.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-mk-rMK/values-mk-rMK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ml-rIN/values-ml-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ml-rIN/values-ml-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-mn-rMN/values-mn-rMN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-mn-rMN/values-mn-rMN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-mr-rIN/values-mr-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-mr-rIN/values-mr-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ms-rMY/values-ms-rMY.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ms-rMY/values-ms-rMY.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-my-rMM/values-my-rMM.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-my-rMM/values-my-rMM.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-nb/values-nb.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-nb/values-nb.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ne-rNP/values-ne-rNP.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ne-rNP/values-ne-rNP.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-night-v8/values-night-v8.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-night-v8/values-night-v8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-nl/values-nl.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-nl/values-nl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pa-rIN/values-pa-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pa-rIN/values-pa-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pl/values-pl.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pl/values-pl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-port/values-port.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-port/values-port.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pt-rBR/values-pt-rBR.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pt-rBR/values-pt-rBR.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pt-rPT/values-pt-rPT.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pt-rPT/values-pt-rPT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pt/values-pt.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-pt/values-pt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ro/values-ro.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ro/values-ro.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ru/values-ru.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ru/values-ru.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-si-rLK/values-si-rLK.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-si-rLK/values-si-rLK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sk/values-sk.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sk/values-sk.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sl/values-sl.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sl/values-sl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sq-rAL/values-sq-rAL.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sq-rAL/values-sq-rAL.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sr/values-sr.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sr/values-sr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sv/values-sv.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sv/values-sv.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sw/values-sw.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sw/values-sw.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sw600dp-v13/values-sw600dp-v13.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-sw600dp-v13/values-sw600dp-v13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ta-rIN/values-ta-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ta-rIN/values-ta-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-te-rIN/values-te-rIN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-te-rIN/values-te-rIN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-th/values-th.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-th/values-th.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-tl/values-tl.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-tl/values-tl.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-tr/values-tr.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-tr/values-tr.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-uk/values-uk.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-uk/values-uk.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ur-rPK/values-ur-rPK.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-ur-rPK/values-ur-rPK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-uz-rUZ/values-uz-rUZ.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-uz-rUZ/values-uz-rUZ.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v11/values-v11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v12/values-v12.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v12/values-v12.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v13/values-v13.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v13/values-v13.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v14/values-v14.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v17/values-v17.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v17/values-v17.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v18/values-v18.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v18/values-v18.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v21/values-v21.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v22/values-v22.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v22/values-v22.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v23/values-v23.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-v23/values-v23.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-vi/values-vi.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-vi/values-vi.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-xlarge-v4/values-xlarge-v4.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-xlarge-v4/values-xlarge-v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-zh-rCN/values-zh-rCN.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-zh-rHK/values-zh-rHK.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-zh-rHK/values-zh-rHK.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-zh-rTW/values-zh-rTW.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-zu/values-zu.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values-zu/values-zu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values/values.xml" afterPath="$PROJECT_DIR$/AWSMobileHelper/build/intermediates/res/merged/androidTest/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <ignored path="HomeCookHelper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -296,21 +719,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="S3WholeBucketIterator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/S3WholeBucketIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
+            <state relative-caret-position="255">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/MainActivity.java">
+      <file leaf-file-name="HttpDownloadUtility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+            <state relative-caret-position="187">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DownloadAddRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/request/DownloadAddRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AvailableS3ContentIterator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/AvailableS3ContentIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="S3TransferHelper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/S3TransferHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="502" column="28" selection-start-line="502" selection-start-column="28" selection-end-line="502" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -318,85 +771,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <file leaf-file-name="HttpDownloadListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="59" />
+            <state relative-caret-position="51">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <file leaf-file-name="BasicDownloader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/BasicDownloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="122">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu_main2.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main2.xml">
+      <file leaf-file-name="ContentManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/ContentManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="12">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_main2.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main2.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoritesListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/FavoritesListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="favorites.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/favorites.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
           </provider>
         </entry>
       </file>
@@ -2746,7 +3147,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="C:\Users\Keanu\Documents\HomeCookHelper" value="5969244326525" />
-        <entry key="C:\Users\Param\Desktop\CS-4440\HomeCookHelper" value="5969226758587" />
+        <entry key="C:\Users\Param\Desktop\CS-4440\HomeCookHelper" value="5969231743979" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -3121,11 +3522,27 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/FavoritesListFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main2.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadStatusUpdater.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadTask.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/request/DownloadRemoveRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/QueueReaderTask.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadObserver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/content/S3ContentSummary.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/content/S3WholeBucketIterator.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/BasicDownloader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/content/ContentManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/content/CloudFrontTransferHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadUtility.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/downloader/request/DownloadAddRequest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mobile/content/S3TransferHelper.java" />
       </list>
     </option>
   </component>
@@ -3160,6 +3577,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3177,18 +3597,199 @@
               <option name="myItemId" value="HomeCookHelper" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="downloader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="downloader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="request" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="downloader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="downloader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="policy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HomeCookHelper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="3c973b63" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\src\main\java\mobile" />
+      <recent name="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\src\main\java" />
+    </key>
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -3514,21 +4115,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27986348" sideWeight="0.4969743" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40443686" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34812286" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5030257" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3562,24 +4163,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -3653,7 +4236,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3663,7 +4246,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3698,14 +4281,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -3738,19 +4313,306 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="-1109">
           <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AWSMobileHelper/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-371">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/edu/gatech/foodaggregate/ExampleInstrumentedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-498">
+          <caret line="5" column="88" selection-start-line="5" selection-start-column="88" selection-end-line="5" selection-end-column="88" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
+        <state relative-caret-position="446">
+          <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="e#1893#1936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/NetworkStateListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/query/QueryHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/request/DownloadRemoveRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/QueueReaderTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadStatusUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/DownloadTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/query/BasicDownloadInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/query/DownloadQueueProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/UserFileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/TransferHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/ContentRemovedListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/LocalContentCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/ContentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/service/BasicDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/S3ContentSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/S3ContentMeta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/ContentDownloadPolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/ContentState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/ContentItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/S3WholeBucketIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/HttpDownloadUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/downloader/request/DownloadAddRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/CloudFrontTransferHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/AvailableS3ContentIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mobile/content/S3TransferHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="502" column="28" selection-start-line="502" selection-start-column="28" selection-end-line="502" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

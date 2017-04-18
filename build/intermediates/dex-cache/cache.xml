@@ -3,24 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\2ec4c45e3b8c7d70609cc76d47eaba3226d29883\output\jars\libs\local-httpasyncclient-4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3a4e1b1602fe2064ee6179f4b4e2e2db9ab99553">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\local-httpasyncclient-4.0_0c709a248476f45d49f8d75fca413eb3c9e08a2a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\2ec4c45e3b8c7d70609cc76d47eaba3226d29883\output\jars\libs\local-commons-logging-1.1.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="efa2ae09f5e02bf233db15bd20f84313da356918">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\local-commons-logging-1.1.3_d28e2815ffa9c4802a436897b8b98a2f41750a75\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -30,57 +12,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\2ec4c45e3b8c7d70609cc76d47eaba3226d29883\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="51629c64eba08fca305edee7d08d3c28ea4229f2">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9c170c2c60ea0599d8bdfc367d4ca6937e199839\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3c038246544db7a1c92b4e078873ed26fff730e1">
+        sha1="91ff74ccc76a0459656da285a58975f16a0cb53c">
         <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_017ee8290605590f51ac3121e853d40e9a680a82\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\2ec4c45e3b8c7d70609cc76d47eaba3226d29883\output\jars\libs\local-httpclient-4.3.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="56337351930e79656510caa85d7414b012c0251e">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\local-httpclient-4.3.2_5a5131a205bb294ec8682665abe617db072c6cac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\2ec4c45e3b8c7d70609cc76d47eaba3226d29883\output\jars\libs\local-httpmime-4.3.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2624ad421ccd728947e00b658cc672a0338abad2">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\local-httpmime-4.3.2_b37e9072e5ff72d8fc52cd2f09441e9c3255d1b7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\2ec4c45e3b8c7d70609cc76d47eaba3226d29883\output\jars\libs\local-httpcore-4.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5d8e79507d49fdc36df3d71b7e1bc98b39303972">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\local-httpcore-4.3.1_50c31c53f7b69f8db2cf4c71b2562e0a7ca4f0bf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Param\.android\build-cache\2ec4c45e3b8c7d70609cc76d47eaba3226d29883\output\jars\libs\local-httpcore-nio-4.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="692b2015b638c1ee649e3073bc7b6bc4de1f169b">
-        <dex dex="C:\Users\Param\Desktop\CS-4440\HomeCookHelper\app\build\intermediates\transforms\dex\debug\folders\1000\10\local-httpcore-nio-4.3.1_7ee6ffaeb0980c21d162133fa01a8c1ca89d47d6\classes.dex" />
     </item>
 
 </items>

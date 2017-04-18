@@ -27,6 +27,25 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleInstance"></activity>
+
+        <service android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService" android:enabled="true" />
+
+        <service android:name="mobile.downloader.service.DownloadService" />
+
+        <receiver android:name="mobile.downloader.service.NetworkStateListener"
+            android:exported="false"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="mobile.downloader.query.DownloadQueueProvider"
+            android:authorities="@string/download_queue_provider_authority"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
     </application>
 
 </manifest>
