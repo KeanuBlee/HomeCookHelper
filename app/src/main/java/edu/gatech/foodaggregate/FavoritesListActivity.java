@@ -1,0 +1,97 @@
+package edu.gatech.foodaggregate;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.StrictMode;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+
+import com.google.gson.JsonArray;
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.JsonNode;
+import com.mashape.unirest.http.Unirest;
+
+import org.json.JSONArray;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Created by Param on 4/11/2017.
+ */
+
+public class FavoritesListActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.favorites);
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+
+        StrictMode.setThreadPolicy(policy);
+    }
+
+    public void search(View view) {
+        RadioGroup rg1 = (RadioGroup) findViewById(R.id.radioGroup);
+        RadioGroup rg2 = (RadioGroup) findViewById(R.id.radioGroup2);
+        EditText search_query = (EditText) findViewById(R.id.search_query);
+        TextView textView = (TextView) findViewById(R.id.textView2);
+        ArrayList<String> recipe_names = new ArrayList<>();
+        ArrayList<String> recipe_ids = new ArrayList<>();
+        if(rg2.getCheckedRadioButtonId() == R.id.internetRadio) {
+            if (rg1.getCheckedRadioButtonId() == R.id.titleRadio) {
+                try {
+                    HttpResponse<JsonNode> response = Unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?instructionsRequired=false&limitLicense=false&number=10&offset=0&query="+search_query.getText().toString()+"&type=main+course")
+                            .header("X-Mashape-Key", "DaiZsIaKDamshMHArSChvMzHFBZgp1yVdb7jsnizZgsd4WrFAp")
+                            .header("Accept", "application/json")
+                            .asJson();
+                    JSONArray results_array = response.getBody().getObject().getJSONArray("results");
+                    for(int i = 0; i < results_array.length(); i++) {
+
+                        recipe_names.add(results_array.getJSONObject(i).getString("title"));
+                        recipe_ids.add(results_array.getJSONObject(i).getString("id"));
+                    }
+                    Intent intent = new Intent(this, Search_List.class);
+                    intent.putExtra("recipe_names", recipe_names);
+                    intent.putExtra("recipe_ids", recipe_ids);
+                    startActivity(intent);
+
+                } catch (Exception e) {
+                    textView.setText(e.toString());
+                }
+            } else {
+                try {
+                    // make spaces/commas between multiple ingredients '%2C'
+                    String search_str = search_query.getText().toString().replace(",","%2C");
+                    HttpResponse<JsonNode> response = Unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients=false&ingredients="+search_str+"&limitLicense=false&number=10&ranking=1")
+                            .header("X-Mashape-Key", "DaiZsIaKDamshMHArSChvMzHFBZgp1yVdb7jsnizZgsd4WrFAp")
+                            .header("Accept", "application/json")
+                            .asJson();
+                    textView.setText(String.valueOf(response.getBody().getArray().length()));
+                    JSONArray results_array = response.getBody().getArray();
+
+                    for(int i = 0; i < results_array.length(); i++) {
+
+                        recipe_names.add(results_array.getJSONObject(i).getString("title"));
+                        recipe_ids.add(results_array.getJSONObject(i).getString("id"));
+                    }
+
+                    Intent intent = new Intent(this, Search_List.class);
+                    intent.putExtra("recipe_names", recipe_names);
+                    intent.putExtra("recipe_ids", recipe_ids);
+                    startActivity(intent);
+
+                } catch (Exception e) {
+                        textView.setText(e.toString());
+                }
+
+
+            }
+        }
+    }
+}

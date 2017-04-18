@@ -3,114 +3,121 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TabHost
+    <RelativeLayout
+        android:id="@+id/search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="17dp">
 
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/internetRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:checked="true"
+                android:text="Internet" />
 
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/favoritesRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/InternetRadio"
+                android:layout_centerHorizontal="true"
+                android:text="Favorites" />
+        </RadioGroup>
 
-                <RelativeLayout
-                    android:id="@+id/search"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-                    <RadioButton
-                        android:id="@+id/InternetRadio"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginLeft="16dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="91dp"
-                        android:checked="true"
-                        android:text="Internet" />
+            android:text="Search Index:"
+            android:textSize="18sp" />
 
-                    <RadioButton
-                        android:id="@+id/favoritesRadio"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignTop="@+id/InternetRadio"
-                        android:layout_centerHorizontal="true"
-                        android:text="Favorites" />
+        <EditText
+            android:id="@+id/search_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/search_button"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp"
+            android:ems="10"
+            android:hint="query"
+            android:inputType="textPersonName" />
 
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_above="@+id/favoritesRadio"
-                        android:layout_alignLeft="@+id/InternetRadio"
-                        android:layout_alignStart="@+id/InternetRadio"
-                        android:text="Search Type:"
-                        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/search_query"
+            android:layout_alignEnd="@+id/search_button"
+            android:layout_alignRight="@+id/search_button"
+            android:text="Search Criteria:"
+            android:textSize="18sp" />
 
-                    <EditText
-                        android:id="@+id/ingredients"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/InternetRadio"
-                        android:layout_alignStart="@+id/InternetRadio"
-                        android:layout_below="@+id/InternetRadio"
-                        android:layout_marginTop="61dp"
-                        android:ems="10"
-                        android:hint="Ingredients"
-                        android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="38dp"
-                        android:text="Search Criteria:"
-                        android:textSize="18sp"
-                        android:layout_below="@+id/InternetRadio"
-                        android:layout_alignLeft="@+id/ingredients"
-                        android:layout_alignStart="@+id/ingredients" />
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="116dp"
+            android:onClick="search"
+            android:text="Search" />
 
-                    <Button
-                        android:id="@+id/search"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignLeft="@+id/favoritesRadio"
-                        android:layout_alignStart="@+id/favoritesRadio"
-                        android:layout_below="@+id/ingredients"
-                        android:layout_marginTop="77dp"
-                        android:text="Search" />
-                </RelativeLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioGroup"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup"
+            android:text="Search Type:"
+            android:textSize="18sp" />
 
-                <RelativeLayout
-                    android:id="@+id/favorites"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/search_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="2dp">
 
-                    <ScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/titleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="By Title" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical" />
-                    </ScrollView>
-                </RelativeLayout>
+            <RadioButton
+                android:id="@+id/ingredientRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Ingredient" />
+        </RadioGroup>
 
-            </FrameLayout>
-        </RelativeLayout>
-    </TabHost>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:text="TextView" />
+    </RelativeLayout>
 </LinearLayout>
