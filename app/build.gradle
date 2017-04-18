@@ -51,5 +51,11 @@ dependencies {
     compile 'com.android.support:design:24.2.1'
     compile project(':AWSMobileHelper')
     compile 'com.mashape.unirest:unirest-android:1.0'
+    compile('com.amazonaws:aws-android-sdk-core:2.3.9')
+
+    // add the S3 SDK dependency
+    compile('com.amazonaws:aws-android-sdk-s3:2.3.9')
+    // add the Cognito SDK dependency
+    compile('com.amazonaws:aws-android-sdk-cognito:2.3.9')
     //compile files('C:/Users/Param/Desktop/CS-4440/HomeCookHelper/unirest-java-1.4.9.jar')
 }

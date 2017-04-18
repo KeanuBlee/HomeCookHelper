@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Keanu\\Documents\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v23\\abc_control_background_material.xml",
-        "source": "C:\\Users\\Keanu\\.android\\build-cache\\b0e62a5107c900801f19d1f2c8a4d98cc7a22ff2\\output\\res\\drawable-v23\\abc_control_background_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Param\\Desktop\\CS-4440\\HomeCookHelper\\AWSMobileHelper\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v23\\abc_control_background_material.xml",
         "source": "C:\\Users\\Param\\.android\\build-cache\\aa762b8561c24afcbca189b9005cfde0b66e5bd8\\output\\res\\drawable-v23\\abc_control_background_material.xml"
     }
