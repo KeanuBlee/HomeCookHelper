@@ -15,8 +15,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.VerificationHandler;
-import com.amazonaws.mobilehelper.auth.IdentityProviderType;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoDevice;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUser;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserAttributes;
@@ -32,12 +30,15 @@ import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.Authentic
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.ForgotPasswordHandler;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.GenericHandler;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.SignUpHandler;
-import com.amazonaws.mobilehelper.config.AWSMobileHelperConfiguration;
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.VerificationHandler;
 import com.amazonaws.mobilehelper.R;
+import com.amazonaws.mobilehelper.auth.IdentityProviderType;
 import com.amazonaws.mobilehelper.auth.signin.userpools.ForgotPasswordActivity;
 import com.amazonaws.mobilehelper.auth.signin.userpools.MFAActivity;
 import com.amazonaws.mobilehelper.auth.signin.userpools.SignUpActivity;
 import com.amazonaws.mobilehelper.auth.signin.userpools.SignUpConfirmActivity;
+import com.amazonaws.mobilehelper.auth.user.IdentityProfile;
+import com.amazonaws.mobilehelper.config.AWSMobileHelperConfiguration;
 import com.amazonaws.mobilehelper.util.ViewHelper;
 import com.amazonaws.services.cognitoidentityprovider.model.UserNotConfirmedException;
 
@@ -573,28 +574,16 @@ public class CognitoUserPoolsSignInProvider implements SignInProvider {
         }
     }
 
-    /** {@inheritDoc} */
     @Override
-    public String getUserName() {
-        if (null == username) {
-            if (null != cognitoUserPool && null != cognitoUserPool.getCurrentUser()) {
-                username = cognitoUserPool.getCurrentUser().getUserId();
-            }
-        }
-
-        return username;
+    public Class<? extends IdentityProfile> getIdentityProfileClass() {
+        return CognitoUserPoolsIdentityProfile.class;
     }
 
-    /** {@inheritDoc} */
-    @Override
-    public String getUserImageUrl() {
-        return null;
+    /**
+     * @return the Cognito User Pool.
+     */
+    public CognitoUserPool getCognitoUserPool() {
+        return cognitoUserPool;
     }
 
-    /** {@inheritDoc} */
-    @Override
-    public void reloadUserInfo() {
-        // Cognito User Pools SDK handles user details refresh when token is refreshed.
-        getToken();
-    }
 }

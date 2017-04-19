@@ -7,11 +7,10 @@ package com.amazonaws.mobilehelper.auth;
 //
 // Source code generated from template: aws-my-sample-app-android v0.16
 //
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.util.Log;
 
 import com.amazonaws.ClientConfiguration;
@@ -20,6 +19,7 @@ import com.amazonaws.auth.AWSBasicCognitoIdentityProvider;
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.CognitoCachingCredentialsProvider;
+import com.amazonaws.mobileconnectors.cognito.CognitoSyncManager;
 import com.amazonaws.mobilehelper.auth.signin.AuthException;
 import com.amazonaws.mobilehelper.auth.signin.CognitoAuthException;
 import com.amazonaws.mobilehelper.auth.signin.ProviderAuthException;
@@ -27,22 +27,22 @@ import com.amazonaws.mobilehelper.auth.signin.SignInActivity;
 import com.amazonaws.mobilehelper.auth.signin.SignInManager;
 import com.amazonaws.mobilehelper.auth.signin.SignInProvider;
 import com.amazonaws.mobilehelper.auth.signin.SignInProviderResultHandler;
+import com.amazonaws.mobilehelper.auth.user.IdentityProfile;
+import com.amazonaws.mobilehelper.auth.user.IdentityProfileManager;
+import com.amazonaws.mobilehelper.auth.user.ProfileRetrievalException;
 import com.amazonaws.mobilehelper.config.AWSMobileHelperConfiguration;
-
 import com.amazonaws.mobilehelper.util.ThreadUtils;
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
 
-import java.util.Map;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Date;
+import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -86,6 +86,7 @@ public class IdentityManager {
     /** Application context. */
     private final Context appContext;
 
+    /** Configuration for the mobile helper. */
     private final AWSMobileHelperConfiguration awsMobileHelperConfiguration;
 
     /* Cognito client configuration. */
@@ -94,11 +95,19 @@ public class IdentityManager {
     /** Executor service for obtaining credentials in a background thread. */
     private final ExecutorService executorService = Executors.newFixedThreadPool(4);
 
-    /**
-     * Timeout CountdownLatch for doStartupAuth().
-     */
+    /** Timeout CountdownLatch for doStartupAuth(). */
     private final CountDownLatch startupAuthTimeoutLatch = new CountDownLatch(1);
 
+    /** Handles retrieving user profiles from the various identity providers. */
+    private final IdentityProfileManager identityProfileManager = new IdentityProfileManager();
+
+    /** The identity profile for the currently signed in user, otherwise null. */
+    private volatile IdentityProfile currentIdentityProfile = null;
+
+    /** Cognito Sync Manager. */
+    private CognitoSyncManager syncManager;
+
+    /** Keep track of the registered sign-in providers. */
     private final List<Class<? extends SignInProvider>> signInProviderClasses = new LinkedList<>();
 
     /** Current provider beingIdentityProviderType used to obtain a Cognito access token. */
@@ -163,6 +172,12 @@ public class IdentityManager {
     private void setCredentialsProvider(final Context context,
                                         final CognitoCachingCredentialsProvider cachingCredentialsProvider) {
         credentialsProviderHolder.setUnderlyingProvider(cachingCredentialsProvider);
+
+        // If this is being called after initial setup, then it is because the credentials provider
+        // has been replaced, so the CognitoSyncManager must also be replaced with one that
+        // uses the new provider.
+        this.syncManager = new CognitoSyncManager(context, awsMobileHelperConfiguration.getCognitoRegion(),
+            cachingCredentialsProvider, clientConfiguration);
     }
 
     private void initializeCognito(final Context context, final ClientConfiguration clientConfiguration) {
@@ -209,6 +224,19 @@ public class IdentityManager {
 
     public CognitoCachingCredentialsProvider getUnderlyingProvider() {
         return this.credentialsProviderHolder.getUnderlyingProvider();
+    }
+
+    /**
+     * Gets the Amazon Cognito Sync Manager, which is responsible for saving and
+     * loading user profile data, such as game state or user settings.
+     *
+     * Note: This method is also available from the AWSMobileClient, but is present
+     * here, since the IdentityManager owns the CognitoSyncManager in order to
+     * recreate it when the credentials provider changes.
+     * @return sync manager
+     */
+    public CognitoSyncManager getSyncManager() {
+        return syncManager;
     }
 
     /**
@@ -358,6 +386,7 @@ public class IdentityManager {
                     currentIdentityProvider.signOut();
                     credentialsProviderHolder.getUnderlyingProvider().clear();
                     currentIdentityProvider = null;
+                    currentIdentityProfile = null;
 
                     // Notify state change listeners of sign out.
                     synchronized (signInStateChangeListeners) {
@@ -444,24 +473,13 @@ public class IdentityManager {
         return currentIdentityProvider;
     }
 
-    // local cache of the user image of currentIdentityProvider.getUserImageUrl();
-    private Bitmap userImage = null;
-
-    private void loadUserImage(final String userImageUrl) {
-        if (userImageUrl == null) {
-            userImage = null;
-            return;
-        }
-
-        try {
-            final InputStream is = new URL(userImageUrl).openStream();
-            userImage = BitmapFactory.decodeStream(is);
-            is.close();
-        } catch (IOException e) {
-            Log.w(LOG_TAG, "Failed to prefetch user image: " + userImageUrl, e);
-            // clear user image
-            userImage = null;
-        }
+    /**
+     * Gets the identity profile manager responsible for retrieving a profiles for a user signed
+     * in with a provider.
+     * @return the identity profile manager.
+     */
+    public IdentityProfileManager getIdentityProfileManager() {
+        return identityProfileManager;
     }
 
     /**
@@ -471,34 +489,41 @@ public class IdentityManager {
      * @param onReloadComplete Runnable to be executed on the main thread after user info
      *                         and user image is reloaded.
      */
-    public void loadUserInfoAndImage(final IdentityProvider provider, final Runnable onReloadComplete) {
+    public void loadUserIdentityProfile(final IdentityProvider provider, final Runnable onReloadComplete) {
         executorService.submit(new Runnable() {
             @Override
             public void run() {
                 Log.d(LOG_TAG, "Retrieving user info and image from identity provider.");
-                provider.reloadUserInfo();
-                Log.d(LOG_TAG, "Loading user image from image url.");
+                final IdentityProfile identityProfile;
+                try {
+                    identityProfile =
+                        identityProfileManager.getIdentityProfile(provider);
+                } catch (final ProfileRetrievalException ex) {
+                    Log.e(LOG_TAG, "Cannot load identity profile.", ex);
+                    return;
+                }
+
+                Log.d(LOG_TAG, "Loading user image from image url: " + identityProfile.getUserImageUrl());
                 // preload user image
-                loadUserImage(provider.getUserImageUrl());
+                try {
+                    identityProfile.loadUserImage();
+                } catch (final IOException ex) {
+                    Log.w(LOG_TAG, "Failed to prefetch user image: " + identityProfile.getUserImageUrl(), ex);
+                }
+                currentIdentityProfile = identityProfile;
                 ThreadUtils.runOnUiThread(onReloadComplete);
             }
         });
     }
 
     /**
-     * Convenient method to get the user image of the current identity provider.
-     * @return user image of the current identity provider, or null if not signed in or unavailable
+     * Convenient method to get the identity profile for the current user if a user is signed-in
+     * with a provider.
+     *
+     * @return the identity profile for the current user, otherwise null.
      */
-    public Bitmap getUserImage() {
-        return userImage;
-    }
-
-    /**
-     * Convenient method to get the user name from the current identity provider.
-     * @return user name from the current identity provider, or null if not signed in
-     */
-    public String getUserName() {
-        return currentIdentityProvider == null ? null : currentIdentityProvider.getUserName();
+    public IdentityProfile getIdentityProfile() {
+        return currentIdentityProfile;
     }
 
     /**
@@ -509,7 +534,6 @@ public class IdentityManager {
     public void addIdentityProvider(final Class<? extends SignInProvider> providerClass) {
         signInProviderClasses.add(providerClass);
     }
-
 
     public Collection<Class<? extends SignInProvider>> getSignInProviderClasses() {
         return signInProviderClasses;
@@ -607,7 +631,7 @@ public class IdentityManager {
                                 Log.d(LOG_TAG, "Successfully got credentials from identity provider '"
                                     + provider.getDisplayName() + "'. Now loading User info.");
 
-                                loadUserInfoAndImage(provider, new Runnable() {
+                                loadUserIdentityProfile(provider, new Runnable() {
                                     @Override
                                     public void run() {
                                         Log.d(LOG_TAG, "Successfully loaded user info and image.");

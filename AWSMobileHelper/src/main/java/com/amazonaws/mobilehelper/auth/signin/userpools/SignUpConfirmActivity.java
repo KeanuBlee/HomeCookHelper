@@ -14,9 +14,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.amazonaws.mobilehelper.R;
 import com.amazonaws.mobilehelper.auth.signin.CognitoUserPoolsSignInProvider;
 import com.amazonaws.mobilehelper.util.ViewHelper;
-import com.amazonaws.mobilehelper.R;
 
 /**
  * Activity to prompt for sign-up confirmation information.

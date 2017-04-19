@@ -8,21 +8,16 @@ package com.amazonaws.mobilehelper.auth.signin;
 // Source code generated from template: aws-my-sample-app-android v0.16
 //
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 
-import com.amazonaws.mobilehelper.auth.IdentityProviderType;
+import com.amazonaws.mobilehelper.R;
 import com.amazonaws.mobilehelper.auth.IdentityManager;
 import com.amazonaws.mobilehelper.auth.IdentityProvider;
-
-import com.amazonaws.mobilehelper.R;
+import com.amazonaws.mobilehelper.auth.IdentityProviderType;
 import com.amazonaws.mobilehelper.auth.SignInResultHandler;
 
 /**
@@ -57,7 +52,7 @@ public class SignInActivity extends Activity {
             final SignInResultHandler signInResultsHandler = signInManager.getResultHandler();
 
             // Load user name and image.
-            identityManager.loadUserInfoAndImage(provider, new Runnable() {
+            identityManager.loadUserIdentityProfile(provider, new Runnable() {
                 @Override
                 public void run() {
                     // Call back the results handler.

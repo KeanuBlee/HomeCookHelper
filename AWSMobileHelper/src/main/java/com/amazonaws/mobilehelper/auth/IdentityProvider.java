@@ -10,6 +10,7 @@ package com.amazonaws.mobilehelper.auth;
 
 import android.content.Context;
 
+import com.amazonaws.mobilehelper.auth.user.IdentityProfile;
 import com.amazonaws.mobilehelper.config.AWSMobileHelperConfiguration;
 
 /**
@@ -67,20 +68,8 @@ public interface IdentityProvider {
     void signOut();
 
     /**
-     * Gets the user's name, assuming user is signed in.
-     * @return user name or null if not signed-in.
+     * @return the identity profile class that may be used to obtain the profile for the signed-in
+     * user for this provider.
      */
-    String getUserName();
-
-    /**
-     * Gets the user's image url, assuming user is signed in.
-     * @return image or null if not signed-in or has no image.
-     */
-    String getUserImageUrl();
-
-    /**
-     * Force the provider to reload user name and image.
-     * Note: this is a blocking call.
-     */
-    void reloadUserInfo();
+    Class<? extends IdentityProfile> getIdentityProfileClass();
 }

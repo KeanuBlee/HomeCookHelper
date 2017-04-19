@@ -44,6 +44,7 @@ public class SignInManager {
             throw new AssertionError();
         }
 
+        this.identityManager = identityManager;
         for (Class<? extends SignInProvider> providerClass : identityManager.getSignInProviderClasses()) {
             final SignInProvider provider;
             try {
@@ -59,7 +60,6 @@ public class SignInManager {
         }
 
         singleton = this;
-        this.identityManager = identityManager;
     }
 
     /**
@@ -105,7 +105,11 @@ public class SignInManager {
      * @param signInProvider sign-in provider
      */
     public void addSignInProvider(final SignInProvider signInProvider) {
-        signInProviders.put(signInProvider.getProviderType(), signInProvider);
+        final IdentityProviderType identityProviderType = signInProvider.getProviderType();
+        signInProviders.put(identityProviderType, signInProvider);
+        identityManager.getIdentityProfileManager()
+            .registerIdentityProfileClass(identityProviderType,
+                signInProvider.getIdentityProfileClass());
     }
 
     /**
