@@ -6,14 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amazonaws.auth.CognitoCachingCredentialsProvider;
 import com.amazonaws.mobileconnectors.cognito.CognitoSyncManager;
 import com.amazonaws.mobileconnectors.cognito.Dataset;
-import com.amazonaws.mobileconnectors.cognito.Record;
-import com.amazonaws.mobileconnectors.cognito.SyncConflict;
-import com.amazonaws.mobileconnectors.cognito.exceptions.DataStorageException;
-import com.amazonaws.mobilehelper.auth.signin.CognitoUserPoolsIdentityProfile;
+import com.amazonaws.mobileconnectors.cognito.DefaultSyncCallback;
 import com.amazonaws.regions.Regions;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
@@ -22,8 +20,6 @@ import com.mashape.unirest.http.Unirest;
 import org.json.JSONArray;
 
 import java.util.List;
-
-import mobile.AWSMobileClient;
 
 /**
  * Created by Keanu on 4/17/2017.
@@ -41,50 +37,27 @@ public class Recipe_Item extends AppCompatActivity{
         id = intent.getStringExtra("id");
 
         CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
-                getApplicationContext(), // Context
-                CognitoUserPoolsIdentityProfile.class.getSimpleName(), // Identity Pool ID
+                getApplicationContext(),
+                "us-east-1:654d88ee-2726-41e0-960f-3be89f3530db", // Identity Pool ID
                 Regions.US_EAST_1 // Region
         );
 
-        CognitoSyncManager client = new CognitoSyncManager(
+        CognitoSyncManager syncClient = new CognitoSyncManager(
                 getApplicationContext(),
-                Regions.US_EAST_1,
+                Regions.US_EAST_1, // Region
                 credentialsProvider);
 
-
-        final Dataset dataset = AWSMobileClient.defaultMobileClient()
-                                    .getSyncManager()
-                                    .openOrCreateDataset(USER_FAVES_DATASET_NAME);
-
+        final Dataset dataset = syncClient.openOrCreateDataset(USER_FAVES_DATASET_NAME);
         favoriteButton = (Button) findViewById(R.id.button2);
         favoriteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dataset.put("favorite", id);
-                dataset.synchronize(new Dataset.SyncCallback() {
+                dataset.synchronize(new DefaultSyncCallback() {
                     @Override
-                    public void onSuccess(Dataset dataset, List<Record> updatedRecords) {
-
-                    }
-
-                    @Override
-                    public boolean onConflict(Dataset dataset, List<SyncConflict> conflicts) {
-                        return false;
-                    }
-
-                    @Override
-                    public boolean onDatasetDeleted(Dataset dataset, String datasetName) {
-                        return false;
-                    }
-
-                    @Override
-                    public boolean onDatasetsMerged(Dataset dataset, List<String> datasetNames) {
-                        return false;
-                    }
-
-                    @Override
-                    public void onFailure(DataStorageException dse) {
-
+                    public void onSuccess(Dataset dataset, List newRecords) {
+                        //Your handler code here
+                        Toast.makeText(Recipe_Item.this, "favorite added", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
