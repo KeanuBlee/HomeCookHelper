@@ -17,7 +17,7 @@ android {
     buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "edu.gatech.foodaggregate"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -34,10 +34,14 @@ repositories {
     maven{
         url 'https://raw.github.com/zeeshanejaz/unirest-android/mvn-repo'
     }
+    flatDir{
+        dirs 'libs'
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'app/libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -51,5 +55,11 @@ dependencies {
     compile 'com.android.support:design:24.2.1'
     compile project(':AWSMobileHelper')
     compile 'com.mashape.unirest:unirest-android:1.0'
-    //compile files('C:/Users/Param/Desktop/CS-4440/HomeCookHelper/unirest-java-1.4.9.jar')
+    compile('com.amazonaws:aws-android-sdk-core:2.3.9')
+    // add the S3 SDK dependency
+    compile('com.amazonaws:aws-android-sdk-s3:2.3.9')
+    // add the Cognito SDK dependency
+    compile('com.amazonaws:aws-android-sdk-cognito:2.3.9')
+    compile 'com.amazonaws:aws-android-sdk-ddb:2.2.+'
+    compile 'com.amazonaws:aws-android-sdk-ddb-mapper:2.2.+'
 }

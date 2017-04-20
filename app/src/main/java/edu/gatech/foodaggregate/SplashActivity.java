@@ -86,9 +86,8 @@ public class SplashActivity extends Activity {
 
     /** Go to the main activity. */
     private void goMain(final Activity callingActivity) {
-        //callingActivity.startActivity(new Intent(callingActivity, MainActivity.class)
-          //  .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        callingActivity.startActivity(new Intent(callingActivity, FavoritesListActivity.class));
+        callingActivity.startActivity(new Intent(callingActivity, MainActivity.class)
+            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         callingActivity.finish();
     }
 

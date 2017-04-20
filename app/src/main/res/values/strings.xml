@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">FoodAggregate</string>
 
+    <string name="download_queue_provider_authority">mobile.downloader-edu.gatech.foodaggregate</string>
+    <!-- This can be anything, but it should be unique to the app. -->
+    <string name="content_file_provider_authority">edu.gatech.foodaggregate</string>
+
     <string name="title_activity_sign_in">Sign-in</string>
     <string name="sign_in_succeeded_message_format">"Sign-in with %s succeeded."</string>
     <string name="sign_in_canceled_message_format">"Sign-in with %s canceled."</string>
@@ -45,5 +49,10 @@
     <string name="sign_up_confirm_failed">Sign up confirmation failed.</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="action_logout">Logout</string>
     <string name="section_format">Hello World from section: %1$d</string>
 </resources>
