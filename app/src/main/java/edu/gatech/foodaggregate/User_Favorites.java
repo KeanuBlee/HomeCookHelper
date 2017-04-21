@@ -52,41 +52,44 @@ public class User_Favorites extends AppCompatActivity implements AdapterView.OnI
         mapper = new DynamoDBMapper(ddbClient);
         ids = new ArrayList<>();
         titles = new ArrayList<>();
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                Favorites favorites = mapper.load(Favorites.class, user.getUserId());
-                recipeIds = favorites.getRecipeID().split(",");
-                String query = favorites.getRecipeID().replace(",","%2C");
-                try {
-                    HttpResponse<JsonNode> response = Unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/informationBulk?ids="+query+"&includeNutrition=false")
-                            .header("X-Mashape-Key", "DaiZsIaKDamshMHArSChvMzHFBZgp1yVdb7jsnizZgsd4WrFAp")
-                            .header("Accept", "application/json")
-                            .asJson();
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        Favorites favorites = mapper.load(Favorites.class, user.getUserId());
+                        recipeIds = favorites.getRecipeID().split(",");
+                        String query = favorites.getRecipeID().replace(",", "%2C");
+                        HttpResponse<JsonNode> response = Unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/informationBulk?ids=" + query + "&includeNutrition=false")
+                                .header("X-Mashape-Key", "DaiZsIaKDamshMHArSChvMzHFBZgp1yVdb7jsnizZgsd4WrFAp")
+                                .header("Accept", "application/json")
+                                .asJson();
 
-                    JSONArray results_array = response.getBody().getArray();
-                    for(int i = 0; i < results_array.length(); i++) {
+                        JSONArray results_array = response.getBody().getArray();
+                        for (int i = 0; i < results_array.length(); i++) {
 
-                        titles.add(results_array.getJSONObject(i).getString("title"));
-                        ids.add(results_array.getJSONObject(i).getString("id"));
+                            titles.add(results_array.getJSONObject(i).getString("title"));
+                            ids.add(results_array.getJSONObject(i).getString("id"));
+                        }
+
+                    } catch (Exception e) {
+                        text.setText(e.toString());
                     }
-
-                } catch (Exception e) {
-                    text.setText(e.toString());
                 }
-            }
-        };
-        Thread mythread = new Thread(runnable);
-        mythread.start();
+            };
+            Thread mythread = new Thread(runnable);
+            mythread.start();
+
         try {
             mythread.join();
         } catch(Exception e) {
 
         }
+        try {
+            ListView lv = (ListView) findViewById(R.id.favorite_list);
+            lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, titles));
+            lv.setOnItemClickListener(this);
+        } catch(Exception e) {}
 
-        ListView lv = (ListView) findViewById(R.id.favorite_list);
-        lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, titles));
-        lv.setOnItemClickListener(this);
     }
     public void onItemClick(AdapterView<?> l, View v, int position, long id) {
         //finds the item clicked and passes its' data into directions.

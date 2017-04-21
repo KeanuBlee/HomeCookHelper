@@ -115,29 +115,36 @@ public class Recipe_Item extends AppCompatActivity{
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Favorites favorites = mapper.load(Favorites.class, user.getUserId());
-                        String data = favorites.getRecipeID();
-                        if (fav_button.getText().equals("Favorite")){
-                            if (!data.contains(id)) {
-                                if (data.isEmpty()) {
-                                    data = data + id;
-                                } else {
-                                    data = data + "," + id;
+                        try {
+                            Favorites favorites = mapper.load(Favorites.class, user.getUserId());
+                            String data = favorites.getRecipeID();
+                            if (fav_button.getText().equals("Favorite")) {
+                                if (!data.contains(id)) {
+                                    if (data.isEmpty()) {
+                                        data = data + id;
+                                    } else {
+                                        data = data + "," + id;
+                                    }
                                 }
+                                fav_button.setText("Unfavorite");
+                            } else {
+                                if (data.contains("," + id + ",")) {
+                                    data = data.replace("," + id + ",", ",");
+                                } else if (data.contains(id + ",")) {
+                                    data = data.replace(id + ",", "");
+                                } else if (data.contains("," + id)) {
+                                    data = data.replace("," + id, "");
+                                }
+                                fav_button.setText("Favorite");
                             }
-                            fav_button.setText("Unfavorite");
-                        } else {
-                            if (data.contains("," + id + ",")) {
-                                data = data.replace("," + id + ",", ",");
-                            } else if(data.contains(id + ",")) {
-                                data = data.replace(id + ",", "");
-                            } else if(data.contains("," + id)) {
-                                data =data.replace("," + id, "");
-                            }
-                            fav_button.setText("Favorite");
+                            favorites.setRecipeID(data);
+                            mapper.save(favorites);
+                        } catch (Exception e) {
+                            Favorites favorites = new Favorites();
+                            favorites.setRecipeID(id);
+                            favorites.setUserName(user.getUserId());
+                            mapper.save(favorites);
                         }
-                        favorites.setRecipeID(data);
-                        mapper.save(favorites);
                     }
                 });
 
