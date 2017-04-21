@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,12 +10,24 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
         <RadioGroup
             android:id="@+id/radioGroup2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView3"
-            android:layout_marginTop="17dp">
+            android:layout_above="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_marginBottom="51dp">
 
             <RadioButton
                 android:id="@+id/internetRadio"
@@ -39,7 +52,9 @@
             android:layout_height="wrap_content"
 
             android:text="Search Index:"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_above="@+id/radioGroup2"
+            android:layout_alignEnd="@+id/textView" />
 
         <EditText
             android:id="@+id/search_query"
@@ -80,22 +95,19 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/radioGroup"
-            android:layout_alignLeft="@+id/radioGroup"
-            android:layout_alignStart="@+id/radioGroup"
             android:text="Search Type:"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_above="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/search_button"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="200dp"
+            android:layout_marginBottom="19dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginStart="2dp">
+            android:layout_above="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4">
 
             <RadioButton
                 android:id="@+id/titleRadio"

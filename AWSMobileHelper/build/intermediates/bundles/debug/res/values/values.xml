@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="sign_in_separator_color">#DDDDDD</color>
+    <declare-styleable name="SignInButton"><attr format="string" name="text"/><attr format="enum" name="button_style">
+            <enum name="large" value="0"/>
+            <enum name="small" value="1"/>
+        </attr></declare-styleable>
     <dimen name="sign_in_button_height">40dp</dimen>
     <dimen name="sign_in_button_margin">10dp</dimen>
     <dimen name="sign_in_button_width">240dp</dimen>

@@ -24,10 +24,13 @@ public class Search_List extends AppCompatActivity implements AdapterView.OnItem
 
         recipe_names = intent.getStringArrayListExtra("recipe_names");
         recipe_ids = intent.getStringArrayListExtra("recipe_ids");
+        try {
+            ListView lv = (ListView) findViewById(R.id.recipe_list);
+            lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, recipe_names));
+            lv.setOnItemClickListener(this);
+        } catch (Exception e) {
 
-        ListView lv = (ListView) findViewById(R.id.recipe_list);
-        lv.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, recipe_names));
-        lv.setOnItemClickListener(this);
+        }
     }
 
 

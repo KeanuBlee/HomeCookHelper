@@ -16,6 +16,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUser;
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserPool;
+import com.amazonaws.mobilehelper.auth.IdentityManager;
+
+import mobile.AWSMobileClient;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -23,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> mAdapter;
     private ActionBarDrawerToggle mDrawerToggle;
+    /** The identity manager used to keep track of the current user account. */
+    private IdentityManager identityManager;
 
 
     @Override
@@ -32,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
         StrictMode.setThreadPolicy(policy);
+
+        // Obtain a reference to the mobile client. It is created in the Application class,
+        // but in case a custom Application class is not used, we initialize it here if necessary.
+        AWSMobileClient.initializeMobileClientIfNecessary(this);
+
+        // Obtain a reference to the mobile client. It is created in the Application class.
+        final AWSMobileClient awsMobileClient = AWSMobileClient.defaultMobileClient();
+
+        // Obtain a reference to the identity manager.
+        identityManager = awsMobileClient.getIdentityManager();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -45,6 +63,21 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setTitle("HomeCookHelper");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (!AWSMobileClient.defaultMobileClient().getIdentityManager().isUserSignedIn()) {
+            // In the case that the activity is restarted by the OS after the application
+            // is killed we must redirect to the splash activity to handle the sign-in flow.
+            Intent intent = new Intent(this, SplashActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            return;
+        }
+
     }
 
     @Override
@@ -79,7 +112,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         if(id == R.id.action_logout){
-            //TODO:Logout user
+            identityManager.signOut();
+            identityManager.signInOrSignUp(this, new SignInHandler());
+            finish();
         }
         // Activate the navigation drawer toggle
         if (mDrawerToggle.onOptionsItemSelected(item)) {
@@ -90,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void addDrawerItems() {
 
-        String[] menuArray = { "Search", "Favorites List", "SignIn", "Sign Out", "Manage Account" };
+        String[] menuArray = { "Search", "Favorites List","Sign Out"};
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, menuArray);
         mDrawerList.setAdapter(mAdapter);
 
@@ -100,31 +135,31 @@ public class MainActivity extends AppCompatActivity {
                 switch (position) {
 
                     case 0:
-
+                        startActivity(new Intent(MainActivity.this, FavoritesListActivity.class));
                         break;
                     case 1:
-                        /*
-                        CameraPosition cameraPosition = mMap.getCameraPosition();
-                        ArrayList<Plant> sortedList = new ProximitySorter(plantList, cameraPosition.target).sortByDistance();
-                        Intent i = new Intent(PlantMapActivity.this, PlantListActivity.class);
-                        i.putParcelableArrayListExtra("PlantList", (ArrayList<? extends Parcelable>) sortedList);
-                        startActivityForResult(i, 1);
-                        */
-                        startActivity(new Intent(MainActivity.this, FavoritesListActivity.class));
-                        Toast.makeText(MainActivity.this, "To Be implemented", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, User_Favorites.class));
                         break;
-                    case 2: //Fourth item
-                        Toast.makeText(MainActivity.this, "To Be implemented", Toast.LENGTH_SHORT).show();
+                    case 2:
+
+                        CognitoUserPool userPool = new CognitoUserPool(getApplicationContext(), "873868204", "72lqi02sjv18jsgom0722tmisa", "1opq49mtggjo0r2ul0jq6mtj2ej78ofph293pfb7kf53gvv7ee7f");
+                        CognitoUser user = userPool.getCurrentUser();
+                        user.signOut();
+                        identityManager.signOut();
+                        identityManager.signInOrSignUp(getApplicationContext(), new SignInHandler());
+                        finish();
+                        //startActivity(new Intent(MainActivity.this, SplashActivity.class));
+
                         break;
-                    case 3:
-                        Toast.makeText(MainActivity.this, "To Be implemented", Toast.LENGTH_SHORT).show();
-                        break;
-                    case 4:
-                        Toast.makeText(MainActivity.this, "To Be implemented", Toast.LENGTH_SHORT).show();
-                        break;
+
                 }
             }
         });
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Toast.makeText(MainActivity.this, "No Favorites Exist yet", Toast.LENGTH_SHORT);
     }
 
     private void setupDrawer() {
