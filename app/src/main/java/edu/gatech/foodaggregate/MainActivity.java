@@ -115,8 +115,7 @@ public class MainActivity extends AppCompatActivity {
                         i.putParcelableArrayListExtra("PlantList", (ArrayList<? extends Parcelable>) sortedList);
                         startActivityForResult(i, 1);
                         */
-                        startActivity(new Intent(MainActivity.this, FavoritesListActivity.class));
-                        Toast.makeText(MainActivity.this, "To Be implemented", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, User_Favorites.class));
                         break;
                     case 2: //Fourth item
 

@@ -30,6 +30,7 @@
         <activity android:name=".FavoritesListActivity"></activity>
         <activity android:name=".Search_List"></activity>
         <activity android:name=".Recipe_Item"></activity>
+        <activity android:name=".User_Favorites"></activity>
         <activity android:name="com.amazonaws.mobilehelper.auth.signin.SignInActivity">
         </activity>
         <service android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService" android:enabled="true" />
