@@ -113,12 +113,12 @@ public class FavoritesListActivity extends AppCompatActivity {
             }
         } else {
             if (rg1.getCheckedRadioButtonId() == R.id.titleRadio) {
-              /*  Thread mythread = new Thread() {
+                Thread mythread = new Thread() {
                     @Override
                     public void run() {
                         runOnUiThread(new Runnable() {
                             @Override
-                            public void run() {*/
+                            public void run() {
                                 Favorites favorites = mapper.load(Favorites.class, user.getUserId());
                                 recipeIds = favorites.getRecipeID().split(",");
                                 String query = favorites.getRecipeID().replace(",","%2C");
@@ -139,17 +139,17 @@ public class FavoritesListActivity extends AppCompatActivity {
                                 } catch (Exception e) {
                                     textView.setText(e.toString());
                                 }
-                         /* }
+                          }
                         });
 
                     }
-                };*/
-              /*  mythread.start();
+                };
+                mythread.start();
                 try {
                     mythread.join();
                 } catch(Exception e) {
 
-                }*/
+                }
 
               //  textView.setText(titles.size());
                 Intent intent = new Intent(this, Search_List.class);

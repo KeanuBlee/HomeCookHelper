@@ -56,17 +56,22 @@ public class Recipe_Item extends AppCompatActivity{
 //         dataset = client.openOrCreateDataset("Favorites");
         AmazonDynamoDBClient ddbClient = new AmazonDynamoDBClient(credentialsProvider);
         mapper = new DynamoDBMapper(ddbClient);
-       /* Runnable runnable = new Runnable() {
+        Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                    Favorites favorites = new Favorites();
-                    favorites.setRecipeID(id);
-                    favorites.setUserName(user.getUserId());
-                    mapper.save(favorites);
+                try {
+                    Favorites favorites = mapper.load(Favorites.class, user.getUserId());
+                    String data = favorites.getRecipeID();
+                    if (data.contains(id)) {
+                        fav_button.setText("Unfavorite");
+                    }
+                } catch(Exception e) {
+
+                }
             }
         };
         Thread mythread = new Thread(runnable);
-        mythread.start();*/
+        mythread.start();
 
 
         TextView title = (TextView) findViewById(R.id.title);

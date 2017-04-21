@@ -16,8 +16,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/FavoritesListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/FavoritesListActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Recipe_Item.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Recipe_Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/User_Favorites.java" afterPath="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/User_Favorites.java" />
     </list>
     <ignored path="HomeCookHelper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,20 +64,22 @@
       <file leaf-file-name="Recipe_Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Recipe_Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="145" column="51" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
+            <state relative-caret-position="725">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2607#3055#0" expanded="true" />
+                <element signature="e#3054#3055#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User_Favorites.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User_Favorites.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/User_Favorites.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="67" column="71" selection-start-line="67" selection-start-column="71" selection-end-line="67" selection-end-column="71" />
+            <state relative-caret-position="707">
+              <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2231#3517#0" expanded="true" />
@@ -90,9 +92,14 @@
       <file leaf-file-name="FavoritesListActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/FavoritesListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="132" column="164" selection-start-line="132" selection-start-column="164" selection-end-line="132" selection-end-column="164" />
-              <folding />
+            <state relative-caret-position="621">
+              <caret line="140" column="33" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+              <folding>
+                <element signature="e#5721#7615#0" expanded="true" />
+                <element signature="e#5844#7572#0" expanded="true" />
+                <element signature="e#7571#7572#0" expanded="true" />
+                <element signature="e#7614#7615#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search_List.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Search_List.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Search_List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="663">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2912,9 +2919,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/user_favorites.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Search_List.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/User_Favorites.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/FavoritesListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Recipe_Item.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/User_Favorites.java" />
       </list>
     </option>
   </component>
@@ -3815,26 +3822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Search_List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-24/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="21146" column="0" selection-start-line="21146" selection-start-column="0" selection-end-line="21146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/FavoritesListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="132" column="164" selection-start-line="132" selection-start-column="164" selection-end-line="132" selection-end-column="164" />
           <folding />
         </state>
       </provider>
@@ -3871,25 +3862,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Recipe_Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="145" column="51" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/User_Favorites.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="67" column="71" selection-start-line="67" selection-start-column="71" selection-end-line="67" selection-end-column="71" />
+        <state relative-caret-position="707">
+          <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2231#3517#0" expanded="true" />
             <element signature="e#3516#3517#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/FavoritesListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="140" column="33" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+          <folding>
+            <element signature="e#5721#7615#0" expanded="true" />
+            <element signature="e#5844#7572#0" expanded="true" />
+            <element signature="e#7571#7572#0" expanded="true" />
+            <element signature="e#7614#7615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Recipe_Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2607#3055#0" expanded="true" />
+            <element signature="e#3054#3055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/edu/gatech/foodaggregate/Search_List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
