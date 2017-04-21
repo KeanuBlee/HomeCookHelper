@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                         CognitoUser user = userPool.getCurrentUser();
                         user.signOut();
                         identityManager.signOut();
-                        identityManager.signInOrSignUp(getApplicationContext(), new SignInHandler());
+                        identityManager.signInOrSignUp(MainActivity.this, new SignInHandler());
                         finish();
                         //startActivity(new Intent(MainActivity.this, SplashActivity.class));
 
